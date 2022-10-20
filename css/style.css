@@ -1,0 +1,186 @@
+
+
+
+/* ======================================================================================= */
+
+.backyard {
+    height: 750px;
+    width: 100%;
+    /* background: url(../img/nightsky.webp) center / 100% no-repeat; */
+    background-image: url(../img/nightsky.webp);
+    background-size: 100%; 
+    
+    background-repeat: no-repeat;
+    position: relative;
+}
+.backyard-night {
+   
+}
+.backyard-night__container {
+}
+.backyard-night__elements {
+}
+.element img{
+    
+    position: absolute;
+}
+.element__moon {
+    max-width: 150px;
+    right: 20px;
+    top: 20px;
+    
+}
+
+.element__moon-back{
+    width: 100px;
+    height: 100px;
+    box-shadow: 30px 30px 50px rgb(250, 247, 60); ;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    background-color: rgb(250, 247, 60);
+    opacity: 0.4;
+    border-radius: 50%;
+}
+
+.element__grass {
+    bottom: 0;
+    max-width: 200px;
+}
+.element__branch {
+    width: 400px;
+    top: 100px;  
+    left: -30px; 
+    z-index: 1; 
+}
+.element__swing {
+    max-width: 400px;
+    top: 250px;
+    z-index: 0;
+}
+
+.element__girl{
+    max-width: 150px;
+    bottom: 180px;
+    left: 170px;
+}
+
+.element__wind {
+    max-width: 150px;
+    opacity: 0.3;
+}
+.element__sheet {
+}
+
+.element__moon:hover + .element__wolf {
+    visibility: visible;
+}
+
+.element__wolf{
+    visibility: hidden;
+    position: fixed;
+    max-width: 400px;
+    bottom: -20px;
+    left: 400px;
+    
+}
+
+/* ======================================================== */
+
+.element__wind-items img:first-of-type{
+    bottom: 100px;
+    left: 100px;
+}
+
+.element__wind-items img:nth-of-type(2){
+    bottom: 200px;
+    left: 250px;
+}
+
+.element__wind-items img:nth-of-type(3){
+    bottom: 250px;
+    left: 40px;
+}
+
+.element__wind-items img:nth-of-type(4){
+    top: 200px;
+    right: 100px;
+}
+
+.element__wind-items img:nth-of-type(5){
+    top: 450px;
+    right: 250px;
+}
+
+.element__wind-items img:nth-of-type(6){
+    top: 400px;
+    right: 40px;
+}
+
+
+/* ======================================================== */
+
+.element__grass-items img{
+    position: fixed;
+    
+}
+
+.element__grass-items img:nth-of-type(2){
+    right: 0;
+}
+.element__grass-items img:nth-of-type(3){
+    right: 200px;
+}
+
+.element__grass-items img:nth-of-type(4){
+    right: 400px;
+}
+
+.element__grass-items img:nth-of-type(5){
+    right: 600px;
+}
+
+.element__grass-items img:nth-of-type(6){
+    left: 200px;
+}
+.element__grass-items img:nth-of-type(7){
+    left: 400px;
+}
+
+
+.element__wind:hover + .element__girl{
+    visibility: hidden;
+}
+
+/* =========================================================================== */
+
+.list li:not(:last-child){
+    margin: 0 0 10px 0;
+
+}
+
+.list{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.list li{
+    min-height: 20px;
+    font-size: 20px;
+    position: relative;
+    
+}
+
+
+.list li::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    background-image: url(../img/moon-yel.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    top: 0px;
+    left: -30px;
+}
